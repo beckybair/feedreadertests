@@ -1,0 +1,30 @@
+{
+  "name": "feedreadertests",
+  "version": "1.0.0",
+  "description": "feed reader testing",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beckybair/feedreadertests.git"
+  },
+  "author": "Becky Boyce",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beckybair/feedreadertests/issues"
+  },
+  "homepage": "https://github.com/beckybair/feedreadertests#readme",
+  "devDependencies": {
+    "browser-sync": "^2.24.5",
+    "gulp": "^4.0.0",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-watch": "^5.0.0",
+    "jquery": "^3.3.1"
+  },
+  "dependencies": {
+    "gulp-eslint": "^5.0.0",
+    "gulp-sass": "^4.0.1"
+  }
+}

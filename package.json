@@ -4,7 +4,7 @@
   "description": "feed reader testing",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jasmine"
   },
   "repository": {
     "type": "git",
@@ -20,7 +20,9 @@
     "browser-sync": "^2.24.5",
     "gulp": "^4.0.0",
     "gulp-autoprefixer": "^5.0.0",
+    "gulp-jasmine-browser": "^4.0.0",
     "gulp-watch": "^5.0.0",
+    "jasmine": "^3.1.0",
     "jquery": "^3.3.1"
   },
   "dependencies": {

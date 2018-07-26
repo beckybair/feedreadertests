@@ -3,7 +3,8 @@ var gulp = require('gulp'),
 	autoprefixer = require('gulp-autoprefixer'),
 	browserSync = require('browser-sync').create(),
 	eslint = require('gulp-eslint'),
-	watch = require('gulp-watch');
+  watch = require('gulp-watch')
+  jasmineBrowser = require('gulp-jasmine-browser');
 
 gulp.task('default', function() {
 	browserSync.init({
@@ -47,4 +48,12 @@ gulp.task('lint', () => {
 		// To have the process exit with an error code (1) on
 		// lint error, return the stream and pipe to failAfterError last.
 		.pipe(eslint.failAfterError());
+});
+
+gulp.task('jasmine', function () {
+  let filesForTest = ['src/**/*.js', 'spec/**/*_spec.js'];
+  return gulp.src(filesForTest)
+    .pipe(watch(filesForTest))
+    .pipe(jasmineBrowser.specRunner())
+    .pipe(jasmineBrowser.server({ port: 8888 }));
 });
